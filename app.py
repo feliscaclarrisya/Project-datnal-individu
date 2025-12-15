@@ -4,10 +4,10 @@ import numpy as np
 import joblib
 
 # LOAD MODEL AND DATA
-model = joblib.load("/mnt/data/decision.pkl")
-scaler = joblib.load("/mnt/data/scaler.pkl")
-le_gender = joblib.load("/mnt/data/labelencoder_gender.pkl")
-feature_cols = joblib.load("/mnt/data/feature_columns.pkl")
+model = joblib.load("/decision.pkl")
+scaler = joblib.load("scaler.pkl")
+le_gender = joblib.load("labelencoder_gender.pkl")
+feature_cols = joblib.load("feature_columns.pkl")
 
 # CUSTOM CSS
 st.markdown("""

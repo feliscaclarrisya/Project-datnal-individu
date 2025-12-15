@@ -3,11 +3,11 @@ import pandas as pd
 import numpy as np
 import joblib
 
-# LOAD MODEL
-model = joblib.load("decision.pkl")
-scaler = joblib.load("scaler.pkl")
-le_gender = joblib.load("labelencoder_gender.pkl")
-feature_cols = joblib.load("feature_columns.pkl")
+# LOAD MODEL AND DATA
+model = joblib.load("/mnt/data/decision.pkl")
+scaler = joblib.load("/mnt/data/scaler.pkl")
+le_gender = joblib.load("/mnt/data/labelencoder_gender.pkl")
+feature_cols = joblib.load("/mnt/data/feature_columns.pkl")
 
 # CUSTOM CSS
 st.markdown("""
@@ -61,6 +61,10 @@ st.markdown("""
         }
         .stButton:hover {
             background-color: #1C6F92;
+        }
+        .stSelectbox, .stNumberInput {
+            font-size: 16px;
+            padding: 8px;
         }
     </style>
 """, unsafe_allow_html=True)

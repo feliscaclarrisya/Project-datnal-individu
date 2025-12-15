@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 
 # LOAD MODEL AND DATA
-model = joblib.load("/decision.pkl")
+model = joblib.load("decision.pkl")
 scaler = joblib.load("scaler.pkl")
 le_gender = joblib.load("labelencoder_gender.pkl")
 feature_cols = joblib.load("feature_columns.pkl")
